@@ -13,7 +13,7 @@ if opção == 1:
 elif opção == 2:
     pagamento = preço - preço * 5 / 100
 elif opção == 3:
-    print('A- 2 parcelas')
+    print('A- 2 parcelas (sem juros)')
     print('B- 3 parcelas ou mais')
     opção2 = (input('Selecione uma condição: ')).upper()
     if opção2 == 'A':
@@ -24,3 +24,5 @@ elif opção == 3:
         parcelas = int(input('Quantidade de parcelas: '))
         print('Valor total: R${:.2f}.'.format(pagamento))
         print('Valor da prestação: {}x R${:.2f}.'.format(parcelas, (pagamento/parcelas)))
+else:
+    print('Opção de pagamento inválida. Tente novamente.')
