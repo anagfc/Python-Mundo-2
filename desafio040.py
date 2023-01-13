@@ -5,9 +5,13 @@ n2 = float(input('Insira a 2ª nota: '))
 média = (n1 + n2) / 2
 
 if média < 5:
-    print('{}, você foi REPROVADO.'.format(nome))
+    print('\n{}, sua média foi {:.1f}.'.format(nome, média))
+    print('Status: REPROVADO.')
     
-elif média > 5 and média < 6.9:
-    print('{}, você está em RECUPERAÇÃO.'.format(nome))
+elif média >= 5 and média < 6.9: #Pode ser usado: 6.9 > média >= 5
+    print('\n{}, sua média foi {:.1f}.'.format(nome, média))
+    print('Status: RECUPERAÇÃO.')
 else:
-    print('{}, você foi APROVADO.'.format(nome))
+    print('\n{}, sua média foi {:.1f}.'.format(nome, média))
+    print('Status: APROVADO.')
+    
