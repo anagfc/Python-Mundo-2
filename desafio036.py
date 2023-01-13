@@ -14,7 +14,7 @@ print('-=*=-'*20)
 print('                                Comprador: {}'.format(nome.title()))
 if prestação > salário * 30 / 100:
     print('\n\033[31mSituação: empréstimo NEGADO\033[m')
-    print('Prestação mensal excede 30% da renda\n')
+    print('Prestação mensal excede R${:.2f} (30% da renda)\n'.format(salário * 30 / 100))
 else:
     print('\n\033[32mSituação: empréstimo APROVADO\033[m')
     print('Valor mensal das prestações: R${:.2f}.'.format(prestação))
