@@ -112,4 +112,3 @@ elif opção == 2:
 else:
     print('Até mais!')
     
-
