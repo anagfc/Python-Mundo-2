@@ -1,4 +1,5 @@
 from random import choice
+from time import sleep
 nome_jogo = 'Jokenpô'
 título1 = '  Você     vs   Computador'
 print('--x--' * 7)
@@ -12,7 +13,14 @@ if opção == 1:
     jogador = input('Qual sua escolha? ').upper()
     opções = ['PEDRA', 'PAPEL', 'TESOURA']
     computador = choice(opções).upper()
-    print('\n')
+    print('--x--' * 7)
+    sleep(0.5)
+    print('{:^35}'.format('jo').upper())
+    sleep(0.5)
+    print('{:^35}'.format('ken').upper())
+    sleep(0.5)
+    print('{:^35}'.format('pô!').upper())
+    sleep(0.5)
     print('-----' * 7)
     print('{:^35}'.format(nome_jogo).upper())
     print('-----' * 7)
@@ -59,7 +67,14 @@ elif opção == 2:
         jogador = input('Qual sua escolha? ').upper()
         opções = ['PEDRA', 'PAPEL', 'TESOURA']
         computador = choice(opções).upper()
-        print('\n')
+        print('--x--' * 7)
+        sleep(0.5)
+        print('{:^35}'.format('jo').upper())
+        sleep(0.5)
+        print('{:^35}'.format('ken').upper())
+        sleep(0.5)
+        print('{:^35}'.format('pô!').upper())
+        sleep(0.5)
         print('-----' * 7)
         print('{:^35}'.format(nome_jogo).upper())
         print('-----' * 7)
@@ -91,7 +106,7 @@ elif opção == 2:
         elif computador == 'TESOURA' and jogador == 'PEDRA':
             print('\n{:-^35}'.format('Você venceu!'.upper()))
         elif computador == 'TESOURA' and jogador == 'PAPEL':
-            print('\n{:-^35}'.format('Computador venceu!'.upper()))   
+            print('\n{:-^35}'.format('Computador venceu!'.upper()))
     else:
         print('Até mais!')
 else:
