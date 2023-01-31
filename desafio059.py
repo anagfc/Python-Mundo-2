@@ -12,13 +12,13 @@ while opção != 5:
         print('=' * 22)
         print('{:^22}'.format('Soma'))
         print('\n   {} + {} = \033[1m{}\033[m\n'.format(n1, n2, soma))
-    if opção == 2:
+    elif opção == 2:
         multiplicação = n1 * n2
         print('\n')
         print('=' * 22)
         print('{:^22}'.format('Multiplicação'))
         print('\n   {} x {} = \033[1m{:.2f}\033[m\n'.format(n1, n2, multiplicação))
-    if opção == 3:
+    elif opção == 3:
         print('\n')
         print('=' * 22)
         print('{:^22}'.format('Maior número')) 
@@ -28,10 +28,12 @@ while opção != 5:
             print('\nO maior número é {}.\n'.format(n2))
         else:
             print('\n  Os dois são iguais.\n')
-    if opção == 4:
+    elif opção == 4:
         print('\n')
         n1 = float(input('Modifique o 1º valor: '))
         n2 = float(input('Modifique o 2º valor: '))
         print('\n')
+    else:
+        print('\nOpção inválida.')
 print('=' * 22)
 print('Encerrando...\n')
