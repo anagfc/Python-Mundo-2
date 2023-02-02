@@ -5,9 +5,9 @@ while True:
     print('{:^24}'.format('Par ou ímpar'.upper()))
     print('-+-' * 8)
     print('{:^24}'.format('Você'))
-    jogador_classe = input('Par ou ímpar? [P/I]: ').upper().strip()
+    jogador_classe = input('Par ou ímpar? [P/I]: ').upper().strip()[0]
     while jogador_classe != 'P' and jogador_classe != 'I':
-        jogador_classe = input('Par ou ímpar? [P/I]: ').upper().strip()
+        jogador_classe = input('Par ou ímpar? [P/I]: ').upper().strip()[0]
     jogador_número = int(input('Sua jogada: '))
     print('-' * 24)
     computador = randint(0, 10)

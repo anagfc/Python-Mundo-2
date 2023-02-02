@@ -12,7 +12,8 @@ while True:
         caros += 1
     if barato == 0:
         barato = valor_un
-    if barato > valor_un:
+        item_barato = item
+    elif barato > valor_un:
         barato = valor_un
         item_barato = item
     print('-' * 30)
